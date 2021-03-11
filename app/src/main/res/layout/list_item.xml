@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/logouad"
+                app:civ_circle_background_color="@color/white"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_picture"
+                android:text="name"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/iv_picture" />
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/iv_picture"
+                android:layout_below="@id/name"
+                android:layout_toEndOf="@+id/iv_picture" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_picture"
+                android:text="alamat"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/separator"
+                android:layout_toEndOf="@id/iv_picture" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
